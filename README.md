@@ -3,7 +3,8 @@
 Shared website profiles for [Longboard](https://github.com/AndrewGBest/Longboard),
 the web browser for TVs, plus the list of verified sites.
 
-**Status: early.** One profile so far, converted from Longboard's predecessor.
+**Status: early.** Two profiles so far, each converted from a single-site app
+that came before Longboard.
 Longboard itself runs but is not released, and the format (version 1) may
 still gain keys.
 

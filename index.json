@@ -11,6 +11,16 @@
       ],
       "path": "profiles/primevideo.com/profile.json",
       "sha256": "9ffc02c8f1791171419370f89776b202505a51c5e74aab5c30681dd3a171d00e"
+    },
+    {
+      "id": "apple-tv",
+      "name": "Apple TV",
+      "version": "1.0.0",
+      "hosts": [
+        "tv.apple.com"
+      ],
+      "path": "profiles/tv.apple.com/profile.json",
+      "sha256": "42848502ffd3473b6b204272faddb42716ceef845bdebc56ae5a9a6ebc4229a2"
     }
   ],
   "verifiedSites": [
