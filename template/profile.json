@@ -1,0 +1,30 @@
+{
+  "longboard": 1,
+  "id": "example-site",
+  "name": "Example Site",
+  "version": "0.1.0",
+  "authors": ["your-github-name"],
+  "licence": "CC0-1.0",
+  "match": {
+    "hosts": ["example.com", "*.example.com"],
+    "paths": ["/"]
+  },
+  "view": {
+    "canvas": "960x540",
+    "safeMargin": 0.05
+  },
+  "focus": {
+    "include": [],
+    "exclude": [],
+    "initial": "",
+    "groups": []
+  },
+  "player": {
+    "container": "",
+    "controls": "",
+    "keys": {}
+  },
+  "text": {},
+  "dismiss": [],
+  "evidence": { "outline": "outline.json" }
+}
