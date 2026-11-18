@@ -1,0 +1,20 @@
+{
+  "longboard-index": 1,
+  "profiles": [
+    {
+      "id": "primevideo",
+      "name": "Prime Video",
+      "version": "1.0.0",
+      "hosts": [
+        "primevideo.com",
+        "*.primevideo.com"
+      ],
+      "path": "profiles/primevideo.com/profile.json",
+      "sha256": "9ffc02c8f1791171419370f89776b202505a51c5e74aab5c30681dd3a171d00e"
+    }
+  ],
+  "verifiedSites": [
+    "primevideo.com",
+    "youtube.com"
+  ]
+}

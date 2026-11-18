@@ -1,0 +1,119 @@
+# Page outlines that back profile.json: every selector in the profile is shown here.
+# These were captured for Tropic Video, Longboard's predecessor, from the live
+# website in a signed-in browser on 2026-11-13 and 2026-11-14, then trimmed.
+# An outline holds structure only: tag names, classes, a short list of
+# structural attributes, and the lengths of text and of withheld attributes.
+# No titles, names, addresses or account details. Lines starting with "#" are
+# notes; a line starting with "####" begins the outline of one page.
+
+#### home-search
+# Trimmed from an outline of the live site's home page, captured 2026-11-13 (signed in).
+# The desktop navigation's search control. Structure only; checked by eye for names and titles.
+ul.UEsHTy[role="presentation"]
+  li.ySsDCm[role="presentation"]
+    div.M20jI7.Pcqe_G.NjRNnC[data-testid=":id"]
+      button.SNxr4G.xcxdXF.O7yDnE[aria-expanded="false"][data-testid=":id"][aria-label:18]
+        span.I0rt3i
+          svg.fbl-icon._30dE3d._1a_Ljt.AuzObd[role="img"][aria-hidden="true"]
+            title{text:6}
+            svg
+      div.u9LsqE.OusFT8.Xi8DTh.NSqTzn._eOT2w[aria-hidden="true"][data-testid="pv-nav-search-dropdown"][tabindex="-1"]
+        div.gFz9FP[data-testid=":id"]
+          div.MkPvu9
+            div.vn6q4F
+              form.HC2pvG[aria-label:6]
+                span.WBdb7q
+                input[type="hidden"][name:2][value:4]
+                input[type="hidden"][name:4][value:10]
+                input#pv-search-nav.GAcohv[type="search"][placeholder:6][autocomplete="off"][name:6]
+                span.NJ4kvW
+                  button.Tj3a9j[type="reset"][data-testid="pv-nav-search-reset"][aria-label:5]{text:5}
+
+#### home-carousels
+# Trimmed from an outline of the live site's home page, captured 2026-11-13 (signed in):
+# the top carousel and one card row, each with its own previous and next arrows.
+# Slides, cards and icons were cut; every remaining line is as captured.
+# Structure only; checked by eye for names and titles.
+div._2RwnU5.dynamic-type-ramp.BNRv2x.WAIdKJ
+  div.u_QEKa[data-testid="top-hero"]
+    div
+      div.pHslAE.KZdtCS[data-testid="top-hero-wrapper"]
+        div.hNuWcy.oZkW1c.DrsRup
+          button[aria-label:28][data-testid="left-arrow"]
+          ul._2Go0y[data-testid="fading-rotating-carousel"]
+            li.acHA45.BF7GqV[aria-label:14]
+              article.SJmNHq.ae7h_p.NBTKAH[data-testid="top-hero-card"]
+            li.acHA45.BF7GqV[aria-label:14]
+              article.SJmNHq.ae7h_p.NBTKAH.hzBSzB[data-testid="top-hero-card"]
+          button[aria-label:30][data-testid="right-arrow"]
+  div.POiopc[data-testid="standard-carousel"]
+    section.QHjixV
+      span.TvxgS1
+        h2.qwttco
+          span[data-testid="carousel-title"]
+            span{text:14}
+    div.UI3iHJ[data-testid=":id"]
+      div
+        section
+          div.vJYTdI.LiEb2X.UEOrk2.CHGlLt.OH_E2I
+            button.Zaab8D.kSwXPp.vEZoyH.iS7JPD[tabindex="-1"][aria-label:17][data-testid="left-arrow"]
+            ul.lw1NJZ[data-testid="card-container-list"]
+              li.NQEYQF.egDugf
+            button.Zaab8D.kSwXPp.vEZoyH.u5kdG4[tabindex="-1"][aria-label:13][data-testid="right-arrow"]
+
+#### store-banner
+# Trimmed from an outline of the live site's Store page, captured 2026-11-14 (signed in):
+# the action box of a banner slide, whose button starts a purchase or rental.
+# Structure only; checked by eye for names and titles.
+div.imzVmU.XZjb4R.sQqF2N[data-testid="action-box"]
+  button._1jWggM.bJmKgG.fbl-btn._2KSX1z._2sxYvx[data-testid="checkout-button"][data-automation-id="checkout-button"]
+    span._36qUej{text:10}
+      span.dv-conditional-linebreak
+        br
+      strong{text:3}
+
+#### detail-before-play
+# Trimmed from an outline of a title's detail page on the live site, captured 2026-11-13 (signed in),
+# before playback: the background trailer, the play and upsell buttons, and the empty player container.
+# Branches were cut and re-indented under one body; every line is as captured.
+# Structure only; checked by eye for names and titles.
+body
+  div.M6O0NK[data-automation-id="hero-background"]
+    div._jJdZN.uWihmC[data-testid="draper-player"]
+      div.draper-player-container[tabindex="-1"]
+        div.f1prfwap
+          div.:id.f1q6xino
+            div[tabindex="-1"]
+              video[aria-hidden="true"][src:68]
+  div.ZsR2Ti
+    div.JpBnA4.BLmu_g.kSQSo5.kbkntC
+      div.ELbc4t[data-testid=":id"]
+        div.mVyVPA.BLmu_g.dv-dp-node-playback
+          a._1jWggM.BLmu_g._3_H2aX.fbl-play-btn.fbl-btn._2rwDjp._30G-ln._2sxYvx[aria-disabled="false"][data-testid="dp-atf-play-button"][data-automation-id="dp-atf-play-button"][role="button"][href:100]
+            span
+              span{text:16}
+      div
+        div.ELbc4t[data-testid=":id"]
+          span.BLmu_g
+            a._1jWggM.BLmu_g.dv-signup-button.fbl-btn._2rwDjp._2KSX1z._2sxYvx[aria-label:10][href:247]
+              span._36qUej{text:10}
+  div#dv-web-player[tabindex="-1"]
+
+#### detail-playing
+# Trimmed from an outline of the same detail page while the player was open, captured 2026-11-13.
+# Branches were cut and re-indented under one body; every line is as captured.
+# Structure only; checked by eye for names and titles.
+body
+  div.M6O0NK[data-automation-id="hero-background"]
+    div._jJdZN.uWihmC[data-testid="draper-player"]
+      div.draper-player-container[tabindex="-1"]
+        div.f1prfwap
+          div.:id.f1q6xino
+            div[tabindex="-1"]
+              video[aria-hidden="true"][src:68]
+  div#dv-web-player.dv-player-fullscreen[tabindex="-1"]
+    div.f1prfwap
+      div.:id.fk9ydtn
+        div[tabindex="-1"]
+          video[aria-hidden="true"][src:68]
+      div.:id.f1g7im4y.f1xr0j2q.fev5ez5.f1bwtfkz[aria-label:10]

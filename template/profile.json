@@ -3,11 +3,18 @@
   "id": "example-site",
   "name": "Example Site",
   "version": "0.1.0",
-  "authors": ["your-github-name"],
+  "authors": [
+    "your-github-name"
+  ],
   "licence": "CC0-1.0",
   "match": {
-    "hosts": ["example.com", "*.example.com"],
-    "paths": ["/"]
+    "hosts": [
+      "example.com",
+      "*.example.com"
+    ],
+    "paths": [
+      "/"
+    ]
   },
   "view": {
     "canvas": "960x540",
@@ -16,15 +23,19 @@
   "focus": {
     "include": [],
     "exclude": [],
-    "initial": "",
-    "groups": []
+    "groups": [],
+    "scrollPrevious": [],
+    "scrollNext": []
   },
   "player": {
-    "container": "",
-    "controls": "",
     "keys": {}
   },
   "text": {},
   "dismiss": [],
-  "evidence": { "outline": "outline.json" }
+  "guard": {
+    "purchase": []
+  },
+  "evidence": {
+    "outline": "outline.txt"
+  }
 }

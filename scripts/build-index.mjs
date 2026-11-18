@@ -1,7 +1,10 @@
-// Writes dist/index.json: every profile with a checksum, plus the
-// verified-sites list. Longboard downloads this one file.
+// Writes index.json at the top of the repository: every profile with the
+// checksum of its file, plus the verified-sites list. Longboard downloads
+// this one file, then each profile it lists, and checks each against its
+// checksum. With --check nothing is written: the script fails if index.json
+// is not what it would write, so a stale index cannot be merged.
 import { createHash } from 'node:crypto';
-import { readFileSync, readdirSync, statSync, mkdirSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 
 const root = new URL('..', import.meta.url).pathname;
@@ -30,7 +33,17 @@ const index = {
   profiles,
   verifiedSites: verified.sites.map((s) => s.domain),
 };
+const text = `${JSON.stringify(index, null, 2)}\n`;
+const file = join(root, 'index.json');
 
-mkdirSync(join(root, 'dist'), { recursive: true });
-writeFileSync(join(root, 'dist/index.json'), `${JSON.stringify(index, null, 2)}\n`);
-console.log(`Wrote dist/index.json: ${profiles.length} profile(s), ${index.verifiedSites.length} verified site(s).`);
+if (process.argv.includes('--check')) {
+  const current = existsSync(file) ? readFileSync(file, 'utf8') : '';
+  if (current !== text) {
+    console.error('index.json is out of date. Run "npm run index" and commit the result.');
+    process.exit(1);
+  }
+  console.log(`index.json is up to date: ${profiles.length} profile(s), ${index.verifiedSites.length} verified site(s).`);
+} else {
+  writeFileSync(file, text);
+  console.log(`Wrote index.json: ${profiles.length} profile(s), ${index.verifiedSites.length} verified site(s).`);
+}

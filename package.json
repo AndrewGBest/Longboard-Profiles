@@ -6,6 +6,6 @@
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "index": "node scripts/build-index.mjs",
-    "check": "node scripts/validate.mjs && node scripts/build-index.mjs"
+    "check": "node scripts/validate.mjs && node scripts/build-index.mjs --check"
   }
 }

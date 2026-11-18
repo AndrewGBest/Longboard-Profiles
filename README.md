@@ -3,14 +3,16 @@
 Shared website profiles for [Longboard](https://github.com/AndrewGBest/Longboard),
 the web browser for TVs, plus the list of verified sites.
 
-**Status: skeleton.** There are no profiles here yet, and Longboard itself is
-at the design stage. The format may still change.
+**Status: early.** One profile so far, converted from Longboard's predecessor.
+Longboard itself runs but is not released, and the format (version 1) may
+still gain keys.
 
 ## What is here
 
 | Path | What |
 |---|---|
-| `profiles/<domain>/` | One folder per website: `profile.json`, `outline.json` (the evidence), `NOTES.md` (what was tested) |
+| `profiles/<domain>/` | One folder per website: `profile.json`, `outline.txt` (the evidence), `NOTES.md` (what was tested) |
+| `index.json` | Built from the above by `npm run index`: every profile with the checksum of its file, plus the verified sites. This is the file Longboard downloads, at most once a day; it then fetches each profile listed and checks it against its checksum |
 | `verified-sites.json` | Websites a person has reviewed and found to carry non-malicious advertising. Longboard starts with ad blocking off on these; the person can still switch it on |
 | `template/profile.json` | Copy this to start a profile |
 | `scripts/` | The checks that run on every pull request, and the index builder |
@@ -25,11 +27,15 @@ described in
 See [CONTRIBUTING.md](CONTRIBUTING.md). In short: one folder per site, open a
 pull request, the checks must pass, a maintainer reviews it.
 
-Run the checks yourself with Node 22 or newer:
+Run the checks yourself with Node 22 or newer, and rebuild the index after
+changing a profile or the verified list:
 
 ```
+npm run index
 npm run check
 ```
+
+The check fails if `index.json` is out of date.
 
 ## Licence
 

@@ -2,13 +2,17 @@
 
 ## A profile
 
-1. In Longboard, open the site and save a page outline.
+1. In Longboard, open the site and choose "Save page outline" in the menu.
+   The file is written to the `diagnostics` folder of Longboard's data
+   folder (`~/.config/Longboard` on Linux).
 2. Create `profiles/<main-domain>/` (for example `profiles/example.com/`).
 3. Copy `template/profile.json` into it as `profile.json` and fill it in from
-   what the outline shows.
-4. Add the outline as `outline.json`.
+   what the outline shows. Delete the keys you do not use.
+4. Add the outline as `outline.txt`. Trim it to the parts that show your
+   selectors if it is long; several pages can go in one file, each begun by
+   a line starting with `####`. Lines starting with `#` are notes.
 5. Add `NOTES.md`: what you tested, on what device and input, and the date.
-6. Run `npm run check`, then open a pull request.
+6. Run `npm run index` and `npm run check`, then open a pull request.
 
 What reviewers look for:
 
@@ -19,9 +23,11 @@ What reviewers look for:
 - one profile per site. To improve an existing one, edit it and raise its
   version.
 
-The automatic check validates the file's shape. Comparing selectors against
-the outline is done by the reviewer for now; an automatic check is planned
-once the outline format is fixed.
+The automatic check validates the profile's shape, refuses unknown keys and
+scripts, and refuses an outline that has a line with a space or an address in
+it (an outline line is one element written as one token, so either means
+text got in). Comparing each selector against the outline is still done by
+the reviewer.
 
 ## A verified site
 

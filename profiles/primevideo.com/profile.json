@@ -1,0 +1,48 @@
+{
+  "longboard": 1,
+  "id": "primevideo",
+  "name": "Prime Video",
+  "version": "1.0.0",
+  "authors": [
+    "AndrewGBest"
+  ],
+  "licence": "CC0-1.0",
+  "match": {
+    "hosts": [
+      "primevideo.com",
+      "*.primevideo.com"
+    ]
+  },
+  "view": {
+    "canvas": "960x540"
+  },
+  "focus": {
+    "scrollPrevious": [
+      "button[data-testid=\"left-arrow\"]"
+    ],
+    "scrollNext": [
+      "button[data-testid=\"right-arrow\"]"
+    ]
+  },
+  "player": {
+    "container": "#dv-web-player",
+    "keys": {
+      "playPause": "Space",
+      "back": "ArrowLeft",
+      "forward": "ArrowRight"
+    }
+  },
+  "text": {
+    "search": "input#pv-search-nav",
+    "searchOpen": "button[aria-expanded]:has(+ [data-testid=\"pv-nav-search-dropdown\"])"
+  },
+  "guard": {
+    "purchase": [
+      ".dv-signup-button",
+      "[data-testid=\"checkout-button\"]"
+    ]
+  },
+  "evidence": {
+    "outline": "outline.txt"
+  }
+}
