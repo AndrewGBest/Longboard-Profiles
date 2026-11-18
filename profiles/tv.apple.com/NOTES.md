@@ -33,7 +33,7 @@ a shelf from a channel page (signed out) and the buttons of a title's page
   a script sending key presses (2026-11-17): shelves turn, the highlight
   lands on the first card shown, and the first key on a title page lands on
   the play button.
-- With Longboard (commit 36673d8), on the live site, **signed out**, on the
+- With Longboard (commit 304caf9), on the live site, **signed out**, on the
   same machine, by a script sending key presses, 2026-11-18, United States
   storefront, a 1920x1080 window drawn at 960x540:
   - the menu named the profile as the one in use;
@@ -43,5 +43,10 @@ a shelf from a channel page (signed out) and the buttons of a title's page
   - on a film's page the first key press landed on the main button.
 - **Not tested:** signed in with Longboard; the player; search; sign-in; a
   remote or a game controller; a real TV. Nobody looked at the screen.
+- **Playing a protected title is expected to fail** on Longboard's engine
+  for now, whatever the profile says: the browser tells the site it can play
+  Dolby audio (AC-3, E-AC-3) that it cannot decode on Linux. Measured on
+  castLabs Electron 45.2.1 on 2026-11-18; playback itself was not tried. A
+  profile cannot change this.
 - Ad blocking: this site is not on the verified list, so Longboard starts
   with the switch on here. What that does to the site was not looked at.
