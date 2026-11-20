@@ -74,7 +74,9 @@ export function checkProfile(p, where, { template = false } = {}) {
   }
 
   if (p.view !== undefined && typeof p.view === 'object' && p.view !== null) {
-    onlyKeys(p.view, ['canvas', 'safeMargin'], `${where} view`);
+    onlyKeys(p.view, ['canvas', 'safeMargin', 'device'], `${where} view`);
+    // One word. A profile never carries what Longboard calls itself (Longboard's Hard rule 3).
+    if (p.view.device !== undefined && p.view.device !== 'tv') fail(where, '"view.device" can only be "tv"');
     if (p.view.canvas !== undefined && !/^\d{3,4}x\d{3,4}$/.test(p.view.canvas)) fail(where, '"view.canvas" must look like 960x540');
     const sm = p.view.safeMargin;
     if (sm !== undefined && !(typeof sm === 'number' && sm >= 0 && sm <= 0.15)) fail(where, '"view.safeMargin" must be between 0 and 0.15');

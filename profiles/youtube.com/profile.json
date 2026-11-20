@@ -1,0 +1,11 @@
+{
+  "longboard": 1,
+  "id": "youtube-tv",
+  "name": "YouTube on TV",
+  "version": "1.0.0",
+  "authors": ["AndrewGBest"],
+  "licence": "CC0-1.0",
+  "match": { "hosts": ["youtube.com", "www.youtube.com"], "paths": ["/tv"] },
+  "view": { "device": "tv" },
+  "evidence": { "outline": "outline.txt" }
+}

@@ -31,6 +31,17 @@
       ],
       "path": "profiles/tv.apple.com/profile.json",
       "sha256": "42848502ffd3473b6b204272faddb42716ceef845bdebc56ae5a9a6ebc4229a2"
+    },
+    {
+      "id": "youtube-tv",
+      "name": "YouTube on TV",
+      "version": "1.0.0",
+      "hosts": [
+        "youtube.com",
+        "www.youtube.com"
+      ],
+      "path": "profiles/youtube.com/profile.json",
+      "sha256": "78dcb4f25a74e99db82226e6fa8563cba00ff4c62ed43b0309ddb52b55594671"
     }
   ],
   "verifiedSites": [

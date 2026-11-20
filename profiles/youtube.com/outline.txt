@@ -1,0 +1,31 @@
+# Page outline that backs profile.json. The profile names no elements; the
+# outline is here to show what the page is: the site's own app for TVs
+# (elements named ytlr-*), which moves its own mark (class zylon-focus).
+# Captured with Longboard's "Save page outline" from the live website's /tv
+# address, signed out, on 2026-11-21, with this profile in use, then trimmed
+# to its first lines. Structure only: tag names, classes, a short list of
+# structural attributes, and the lengths of text. No titles, names or addresses.
+
+#### welcome
+html.longboard-no-pointer
+  body.WEB_PAGE_TYPE_WELCOME.landscape.app-quality-root.yt-icon-font-loaded
+    div#app-background
+    div#container
+      ytlr-app.gJiGL.zylon-focus[tabindex="-1"]
+        ytlr-app-background-container.HVEgpe.bqaIvf.wV7zuf.aNw44b[tabindex="-1"]
+        ytlr-player-container.F7NZWe.Gy3ftf[tabindex="-1"]
+          div.SUW9Tb.W7Bwpf
+          ytlr-player#player-container.iLKnN.s3u3Oc[aria-hidden="true"][tabindex="-1"]
+            div.aeeFdf
+              div.p0DeOc
+              div#:id
+                div#:id.html5-video-player.ytp-hide-controls.:id.ytp-exp-ppp-update.ytp-livebadge-color[tabindex="-1"]
+                  div.html5-video-container
+                    video.video-stream.html5-main-video[tabindex="-1"]
+            div.iha0pc
+            div.SGph6b
+        yt-route.t2sAbd.zylon-unfocusable.wXqoX[tabindex="-1"]
+        yt-route.t2sAbd.zylon-unfocusable.wXqoX[tabindex="-1"]
+        yt-route.t2sAbd.zylon-unfocusable.wXqoX[tabindex="-1"]
+        ytlr-guide-response.jrEMd.kqJQRb.QyMBZc.jIdQNe.YyZ7hf.poMHrb.zylon-hidden.zylon-ve[aria-hidden="true"][tabindex="-1"]
+          ytlr-redux-connect-ytlr-logo-entity
