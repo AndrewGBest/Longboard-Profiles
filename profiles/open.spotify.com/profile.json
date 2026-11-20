@@ -1,0 +1,49 @@
+{
+  "longboard": 1,
+  "id": "spotify-web-player",
+  "name": "Spotify web player",
+  "version": "1.0.0",
+  "authors": [
+    "AndrewGBest"
+  ],
+  "licence": "CC0-1.0",
+  "match": {
+    "hosts": [
+      "open.spotify.com"
+    ]
+  },
+  "view": {
+    "canvas": "1280x720"
+  },
+  "focus": {
+    "initial": "main [role=\"button\"], main a, main button",
+    "groups": [
+      {
+        "name": "page",
+        "selector": "main",
+        "axis": "vertical"
+      },
+      {
+        "name": "library",
+        "selector": "nav",
+        "axis": "vertical"
+      },
+      {
+        "name": "top bar",
+        "selector": "[data-testid=\"global-nav-bar\"]",
+        "axis": "horizontal"
+      },
+      {
+        "name": "player bar",
+        "selector": "[data-testid=\"now-playing-bar\"]",
+        "axis": "horizontal"
+      }
+    ]
+  },
+  "text": {
+    "search": "[data-testid=\"search-input\"]"
+  },
+  "evidence": {
+    "outline": "outline.txt"
+  }
+}

@@ -1,0 +1,65 @@
+# Page outline that backs profile.json: every selector in the profile is shown here.
+# Captured with Longboard's "Save page outline" from the live website, signed
+# out, on 2026-11-20, then trimmed. An outline holds structure only: tag names,
+# classes, a short list of structural attributes, and the lengths of text and
+# of withheld attributes. No titles, names, addresses or account details.
+# Lines starting with "#" are notes.
+
+#### home
+# The web player's start page. Trimmed to the bar across the top with its
+# search field, the library column, the player bar, and the main pane down to
+# its first card. Checked by eye for names and titles.
+
+    div#main
+      div.Root.global-nav.centered-layout[data-testid="root"]
+        div.PbMBx95owTmQYYdfnp3j
+          div.rr3AwF0UoO45NOY__aIz
+          div#global-nav-bar.EmXZMILXH0bP7U461Va6._DcYszEgDV5s7JPGo0gQ.NwW7HCOazJ4_FZbHInHd.FyyrQRrOaAFNukXPE6sg[data-testid="global-nav-bar"]
+# ... (the bar: home button, then the search field)
+                      input.:id.:id.encore-text-body-medium.RYFwfQTMR9mVodv10kWY.:id[role="combobox"][aria-expanded="false"][data-testid="search-input"][aria-label:25][type="search"][placeholder:25][tabindex="0"]
+# ... (the library column)
+            nav.BRNnyWqRD_oqVmH2UTfX[aria-label:4]
+              div.yAneh8mS1FolwrgwEr9D.U8pWs66XaNepy9_eLqLk
+                div.z6ZLhF0EmhEF2bN197k5.YourLibraryX[tabindex="-1"]
+# ... (the player bar)
+            aside.TDRmHQO0LVotUz4Mzi2d.GkZspcHt_sFR7ykry84w[aria-label:15][data-testid="now-playing-bar"]
+              div.zrCkr7Ug6ca1d1eQSsQt[data-testid="signup-bar"]
+                    div.V1Clhdwn1s7efEC06TCK[data-testid="player-controls"][aria-label:15]
+                      div.vuoiRt9fgNnPtLEiyZog[data-testid="general-controls"]
+# ... (the main pane)
+          div#main-view.BPRPH_jrStQIw2m2qfDl
+            div.main-view-container
+              div.before-scroll-node
+              div.:id.A7zNIB2sDpjiE8bNH0K5
+                div[tabindex="-1"]
+                  div.:id
+                    main.TKq2Yidc5rgHzpJFRFYW[tabindex="-1"][aria-label:70]
+                      div
+                        div.h1AjDPMDbQn9UTUl6owY
+                        section.TqXh0jBhlpBzSoQK269L.zu6VAYAL7KGtQA8itdmO[data-testid="home-page"]
+                          span.:id
+                            h1.:id{text:4}
+                          div.YQm_wsx7Ts5zBY4GiBdK.contentSpacing
+                            section.QZV7uWnIchovpjyboQwG.OFUJKhOsmj1nvIpNdRqt.gA5PC3VNOm2OOznkO7Rr[data-testid="component-shelf"][aria-label:14]
+                              div.iUfUXbHLQSuF0eV7pihR
+                                div.:id.:id.:id.:id.:id.:id.:id.:id.w5RFyIvuBg_EOtLWBM0M[role="group"][aria-labelledby:18][data-testid=":id"]
+                                  div.:id
+                                    div.:id.:id
+                                      h2#:r2:.:id.encore-text-title-small.:id.:id.:id.NRwDeklub6lYIB0exWvw[aria-describedby:4][aria-hidden="true"]
+                                        span.:id
+                                          a[data-testid="see-all-link"][tabindex="-1"][href:31]{text:14}
+                                    div.:id.:id
+                                      a.dx8gNzjE0xCEFww86lU5.IQw3bypVTUhczhftblBr[href:31]
+                                        span.:id.:id.:id{text:8}
+                              div.W7ETd1fZHm0MV0Jqtjeu.wlt29eHDgK8xhXU4uIYM.VdoAFBSgMkSkMmW0NgAk
+                                div.JIrO_Kklclbf_mnPX9Dh.gtZfhS_61gw_CbEDgssJ.a5RiTgzNtnMyWCVBpURE[role="presentation"][data-testid="carousel-scroller"]
+                                  div.KitA0elDgX3WgNgMNV_X[role="presentation"]
+                                    span[hidden=""]
+                                    div#:id.MAzXXol8EWK_N1YMCqiZ.QGcOPYEa9lHAwKBgCDcV[aria-label:14][role="grid"][tabindex="0"]
+                                      div#:id.oQSngkUbhn6QbAKe2WBX[tabindex="-1"][role="row"]
+                                        div[role="gridcell"]
+                                          div.bqrd0cICXSoGyGkKQaJS[role="presentation"]
+                                            div.:id.:id.:id.:id.:id.BkbPmoBnlSxePcoqz0m_.Card[role="listitem"][aria-labelledby:49]
+                                              div.:id.:id[role="button"][aria-disabled="false"][aria-labelledby:102][aria-describedby:49][tabindex="0"]
+                                              div#:id.:id
+                                              div.tUMQUAjcqP9HiKrGGsPD

@@ -2,6 +2,16 @@
   "longboard-index": 1,
   "profiles": [
     {
+      "id": "spotify-web-player",
+      "name": "Spotify web player",
+      "version": "1.0.0",
+      "hosts": [
+        "open.spotify.com"
+      ],
+      "path": "profiles/open.spotify.com/profile.json",
+      "sha256": "e694184b6186d2994c49dc231147b308dc252a9c6090bf3aee96d31a58b0254d"
+    },
+    {
       "id": "primevideo",
       "name": "Prime Video",
       "version": "1.0.0",
