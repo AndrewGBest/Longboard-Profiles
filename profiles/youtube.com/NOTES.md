@@ -11,20 +11,22 @@ YouTube. The site's name is used only to say which website this file is for.
 
 | In the profile | What it is for |
 |---|---|
-| `match.hosts`, `match.paths` | The site's `/tv` address and nothing else. The ordinary site at the same domain is not touched and is told only Longboard's usual identity |
+| `match.hosts`, `match.paths` | The site's `/tv` address and nothing else. The ordinary site's other pages are not touched and are told only Longboard's usual identity |
+| `view.entry` | `/tv`: the site's front page, however it is reached, is opened at the TV app instead. Found necessary on the live site: told it is a TV, the plain address still serves the ordinary site |
 | `view.device` | `"tv"`: for these pages Longboard adds to its usual identity that it is Longboard running as a TV, and leaves the remote to the site's app (arrows, OK, media keys, and Back as Escape or Backspace) |
 
-That is all. The words Longboard uses are Longboard's (its Hard rule 3): its
+The words Longboard uses are Longboard's (its Hard rule 3): its
 real engine, version and system, then `Longboard_TV/<version> (Longboard,
 <system>)`. It does not claim to be another browser, another maker's TV or a
 console, and the profile could not make it.
 
 ## How to use it
 
-Open `youtube.com/tv` (add it to Home). Opening `youtube.com` gives the
-ordinary site as before; a profile cannot send you from one to the other.
+Go to the site: its plain address, typed or from Home, opens the TV app
+(`view.entry`, added in version 1.1.0 of this profile). An address that
+names one video, one search or any other page still opens the ordinary site.
 
-Needs Longboard 0.3.13 or newer. Older versions refuse a profile with a key
+Needs Longboard 0.3.14 or newer. Older versions refuse a profile with a key
 they do not know and carry on without it.
 
 ## Evidence
@@ -42,6 +44,8 @@ By script, 2026-11-21, with Longboard 0.3.13's code:
 - The page's scripts and its requests are told the same identity; the
   ordinary site in the same run is told the usual one.
 - The arrows reach the app untouched and Longboard draws no highlight.
+- The plain address, with and without `www`, lands on the TV app; a search
+  address opens the ordinary search page with the usual identity (0.3.14's code).
 
 **Not tested, and why:** anything past the app's first screen. Its only
 button there starts signing in, and a scripted run of Longboard never presses
