@@ -11,8 +11,9 @@ YouTube. The site's name is used only to say which website this file is for.
 
 | In the profile | What it is for |
 |---|---|
-| `match.hosts`, `match.paths` | The site's `/tv` address and nothing else. The ordinary site's other pages are not touched and are told only Longboard's usual identity |
-| `view.entry` | `/tv`: the site's front page, however it is reached, is opened at the TV app instead. Found necessary on the live site: told it is a TV, the plain address still serves the ordinary site |
+| `match.hosts`, `match.paths` | The site's `/tv` address and nothing else. These are the pages the TV statement and the remote hand-over apply to. Other sites of the same company (its music site, its sign-in pages) are other hosts and are not touched |
+| `view.entry` | `/tv`: every address of the site is opened at the TV app instead of the ordinary site. Found necessary on the live site: told it is a TV, the ordinary addresses still serve the ordinary site |
+| `view.carry` | `["v"]`: a link to one video keeps its video. Tried on the live site: the TV app opened at `/tv?v=<id>` plays it. No other parameter was tried, so no other is listed |
 | `view.device` | `"tv"`: for these pages Longboard adds to its usual identity that it is Longboard running as a TV, and leaves the remote to the site's app (arrows, OK, media keys, and Back as Escape or Backspace) |
 
 The words Longboard uses are Longboard's (its Hard rule 3): its
@@ -22,11 +23,11 @@ console, and the profile could not make it.
 
 ## How to use it
 
-Go to the site: its plain address, typed or from Home, opens the TV app
-(`view.entry`, added in version 1.1.0 of this profile). An address that
-names one video, one search or any other page still opens the ordinary site.
+Go to the site, by any address: it opens in the TV app. A link to one video
+opens that video there. To have the ordinary site, switch the profile off
+for it: the menu, "This page", "Use this site's profile".
 
-Needs Longboard 0.3.14 or newer. Older versions refuse a profile with a key
+Needs Longboard 0.3.15 or newer. Older versions refuse a profile with a key
 they do not know and carry on without it.
 
 ## Evidence
@@ -47,11 +48,16 @@ By script, 2026-11-21, with Longboard 0.3.13's code:
 - The plain address, with and without `www`, lands on the TV app; a search
   address opens the ordinary search page with the usual identity (0.3.14's code).
 
-**Not tested, and why:** anything past the app's first screen. Its only
-button there starts signing in, and a scripted run of Longboard never presses
-sign-up controls. So browsing, search, the player, Back at the top level and
-signing in (which the app does with a code on another device) have not been
-seen. They need a person with a remote.
+- As a guest (the account screen's "Watch as guest", in a new data folder):
+  a short link to a video lands on the TV app and that video plays; Back
+  leaves the player for the app's start page; the arrows move among the
+  videos there. A search address lands on the app's start (1.2.0, with
+  Longboard 0.3.15's code).
+
+**Not tested:** signing in (the app does it with a code on another device,
+and a scripted run of Longboard never presses sign-up controls), the app's
+search and its own keyboard, Back at the app's top level, and anything by a
+person with a remote.
 
 ## Risk
 

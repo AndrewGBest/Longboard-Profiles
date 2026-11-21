@@ -74,7 +74,9 @@ export function checkProfile(p, where, { template = false } = {}) {
   }
 
   if (p.view !== undefined && typeof p.view === 'object' && p.view !== null) {
-    onlyKeys(p.view, ['canvas', 'safeMargin', 'device', 'entry'], `${where} view`);
+    onlyKeys(p.view, ['canvas', 'safeMargin', 'device', 'entry', 'carry'], `${where} view`);
+    // Names of query parameters copied to the entry: plain names, and only with an entry.
+    if (p.view.carry !== undefined && !(Array.isArray(p.view.carry) && p.view.carry.length > 0 && p.view.carry.length <= 10 && p.view.carry.every((n) => typeof n === 'string' && /^[A-Za-z0-9_-]{1,30}$/.test(n)) && p.view.entry !== undefined)) fail(where, '"view.carry" must be a short list of plain parameter names, and needs "view.entry"');
     // A plain path on the site itself: never another site, never a query.
     if (p.view.entry !== undefined && !(typeof p.view.entry === 'string' && p.view.entry.length <= 200 && /^\/[A-Za-z0-9._~\-/]*$/.test(p.view.entry) && !p.view.entry.startsWith('//') && p.view.entry !== '/')) fail(where, '"view.entry" must be a plain path on the site, such as "/tv"');
     // One word. A profile never carries what Longboard calls itself (Longboard's Hard rule 3).

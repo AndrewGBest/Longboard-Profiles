@@ -35,13 +35,13 @@
     {
       "id": "youtube-tv",
       "name": "YouTube on TV",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "hosts": [
         "youtube.com",
         "www.youtube.com"
       ],
       "path": "profiles/youtube.com/profile.json",
-      "sha256": "04b347c98ee56b3eef5fcecc7d146b51084ab9318b5b9fc70d7f03e8a082ae09"
+      "sha256": "c58da6099d15936442b5cf85907f73e61647f21f3f55ba05e890f46aebd5ee72"
     }
   ],
   "verifiedSites": [
