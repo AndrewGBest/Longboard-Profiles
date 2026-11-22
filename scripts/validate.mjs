@@ -74,9 +74,7 @@ export function checkProfile(p, where, { template = false } = {}) {
   }
 
   if (p.view !== undefined && typeof p.view === 'object' && p.view !== null) {
-    onlyKeys(p.view, ['canvas', 'safeMargin', 'device', 'named', 'entry', 'carry'], `${where} view`);
-    // Only "leave Longboard's name out"; nothing can be put in its place (Longboard's Hard rule 3).
-    if (p.view.named !== undefined && (p.view.named !== false || p.view.device !== undefined)) fail(where, '"view.named" can only be false, and not together with "view.device"');
+    onlyKeys(p.view, ['canvas', 'safeMargin', 'device', 'entry', 'carry'], `${where} view`);
     // Names of query parameters copied to the entry: plain names, and only with an entry.
     if (p.view.carry !== undefined && !(Array.isArray(p.view.carry) && p.view.carry.length > 0 && p.view.carry.length <= 10 && p.view.carry.every((n) => typeof n === 'string' && /^[A-Za-z0-9_-]{1,30}$/.test(n)) && p.view.entry !== undefined)) fail(where, '"view.carry" must be a short list of plain parameter names, and needs "view.entry"');
     // A plain path on the site itself: never another site, never a query.

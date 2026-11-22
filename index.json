@@ -2,17 +2,6 @@
   "longboard-index": 1,
   "profiles": [
     {
-      "id": "disney-plus",
-      "name": "Disney+",
-      "version": "1.0.0",
-      "hosts": [
-        "disneyplus.com",
-        "www.disneyplus.com"
-      ],
-      "path": "profiles/disneyplus.com/profile.json",
-      "sha256": "a5f6f7c68eb3f555060a01591aec10ef2b9915666202a0cb15f425a9949438c6"
-    },
-    {
       "id": "spotify-web-player",
       "name": "Spotify web player",
       "version": "1.0.0",
