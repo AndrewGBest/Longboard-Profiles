@@ -12,6 +12,16 @@
       "sha256": "157076b6d77505db60be33264c3d7ae0899877969733b93fc4cc962de50806a2"
     },
     {
+      "id": "xbox-cloud-gaming",
+      "name": "Xbox Cloud Gaming",
+      "version": "1.0.0",
+      "hosts": [
+        "play.xbox.com"
+      ],
+      "path": "profiles/play.xbox.com/profile.json",
+      "sha256": "42de02c1c8e16b95d717fc216e56b31805338dd0c9490c57b9544d0a73093b15"
+    },
+    {
       "id": "primevideo",
       "name": "Prime Video",
       "version": "1.0.0",

@@ -1,0 +1,21 @@
+{
+  "longboard": 1,
+  "id": "xbox-cloud-gaming",
+  "name": "Xbox Cloud Gaming",
+  "version": "1.0.0",
+  "authors": [
+    "AndrewGBest"
+  ],
+  "licence": "CC0-1.0",
+  "match": {
+    "hosts": [
+      "play.xbox.com"
+    ]
+  },
+  "view": {
+    "device": "tv-browser"
+  },
+  "evidence": {
+    "outline": "outline.txt"
+  }
+}

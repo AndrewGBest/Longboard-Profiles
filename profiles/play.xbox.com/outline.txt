@@ -1,0 +1,79 @@
+# Page outline that backs profile.json. The profile names no elements; the
+# outline is here to show what the page is: the layout the site gives
+# browsers on TVs (one top bar, element ids nav-guide, nav-home, nav-search,
+# nav-notifications; no side bar), in which every control is a real button.
+# Captured with Longboard's "Save page outline" from the live website's
+# first page, signed in, on 2026-11-23, with this profile in use, then
+# trimmed to its first lines. Structure only: tag names, classes, a short
+# list of structural attributes, and the lengths of text. No titles, names
+# or addresses.
+
+#### first page
+html.global.sbar.forced-color-adjust-none.longboard-no-pointer
+  body.flex.min-h-screen.:id.:id.:id
+    div.absolute
+    div#wcp-consent-banner.absolute
+    span[hidden=""]
+    div.pointer-events-none.isolate.overflow-hidden.absolute.inset-x-0.top-0.h-screen
+      div.absolute.inset-0
+        div.absolute.inset-0.isolate
+          div.pointer-events-none.absolute.inset-0.isolate[aria-hidden="true"]
+            div.absolute.isolate
+              div.absolute.isolate
+                div.absolute.inset-0.origin-top-left
+                  div.absolute.inset-0.origin-top
+                    div.absolute.inset-0
+                      div.absolute.inset-0
+                        div.absolute.inset-0.h-full.w-full.:id.:id.:id.:id.:id.:id
+    div.relative.h-full.w-full
+      div.relative.flex.h-full.w-full.flex-row
+        div.z-skip-to-main.pointer-events-none.fixed.inset-0
+          div.absolute
+          div.absolute.flex.w-full.justify-center.:id.:id.shadow-2xl.pointer-events-none.opacity-0.:id.focus-within:opacity-100
+            button.fb.select-none.focus-visible:foc-action.:id.focus-visible:foc.:id.:id.bbb.bb-brand-r.hover:bb-brand-h.focus-visible:bb-b[type="button"]
+              span.truncate.type-cta.text-center.w-[100%]{text:12}
+        div.z-main.relative.min-w-0.flex-grow
+          div.@container.z-shell-top.flex.w-full.flex-col.items-stretch.relative.pointer-events-auto
+            div.absolute
+            div
+              nav.pointer-events-auto.relative.flex.w-full.flex-row.items-center.justify-between.gap-internal-gap-regular.:id.:id
+                div.flex.flex-row.items-center.gap-internal-gap-regular
+                  button#nav-guide.fb.select-none.focus-visible:foc-pill.:id.focus-visible:foc.:id.:id.bbb.bb-cii-r.hover:bb-cii-h.focus-visible:bb-cii-f.a[type="button"][aria-label:5]
+                    div.relative.h-full.w-full
+                      div.z-shell-behind.absolute.size-full.:id.rounded-pill.transition-opacity.duration-spring-default.ease-spring-default.opacit
+                      div.p-[2px].absolute.bottom-0.end-0.start-0.top-0.mask-composite-subtract.:id.:id.rounded-pill
+                      div.flex.h-full.flex-row.items-center.!p-0
+                        div.flex.items-center.justify-center
+                          svg.fill-current.w-full.h-full
+                  div.grid.grid-cols-1.grid-rows-3.:id
+                    button#nav-home.fb.select-none.focus-visible:foc-action.:id.focus-visible:foc.:id.:id.bbb.bb-cii-r.hover:bb-cii-h.focus-visible:bb-cii-f[type="button"][aria-label:4][aria-expanded="false"]
+                      span.truncate.type-cta.text-center.w-[100%]{text:12}
+                      span.flex.items-center.justify-center.pointer-events-none
+                        svg.fill-current.w-auto.h-icon-cta
+                div.flex.flex-row.items-center.:id
+                  span
+                    button#nav-search.fb.select-none.focus-visible:foc-action.:id.focus-visible:foc.:id.:id.bbb.bb-cii-r.hover:bb-cii-h.focus-visible:bb-cii-f[type="button"][aria-label:6]
+                      span.flex.items-center.justify-center.pointer-events-none
+                        svg.fill-current.w-auto.h-icon-cta
+                  span
+                    button#:rk:.fb.select-none.focus-visible:foc-action.:id.focus-visible:foc.:id.:id.bbb.bb-cii-r.hover:bb-cii-h.focus-visible:bb-cii-f[type="button"][aria-label:23]
+                      span.flex.items-center.justify-center.pointer-events-none
+                        svg.fill-current.w-auto.h-icon-cta
+                  span
+                    button#nav-notifications.fb.select-none.focus-visible:foc-action.:id.focus-visible:foc.:id.:id.bbb.bb-cii-r.hover:bb-cii-h.focus-visible:bb-cii-f[type="button"][aria-label:13]
+                      span.flex.items-center.justify-center.pointer-events-none
+                        svg.fill-current.w-auto.h-icon-cta
+                  span
+                    button#:rl:.fb.select-none.focus-visible:foc-pill.:id.focus-visible:foc.:id.:id.bbb.bb-cii-r.hover:bb-cii-h.focus-visible:bb-cii-f.a[type="button"][aria-label:7]
+                      div.relative.h-full.w-full
+                        div.z-shell-behind.absolute.size-full.:id.rounded-pill.transition-opacity.duration-spring-default.ease-spring-default.opacit
+                        div.p-[2px].absolute.bottom-0.end-0.start-0.top-0.mask-composite-subtract.:id.:id.rounded-pill
+                        div.flex.h-full.flex-row.items-center.!p-0
+                          div.flex.items-center.justify-center
+                            div#gamerpic-visual.:id.box-border.items-center.justify-center.rounded-pill.overflow-hidden.relative.aspect-square.block.h-full.w-full.!max-[role="img"][aria-label:12]
+                              div.relative.flex.items-stretch.overflow-hidden.:id.:id
+                                img.h-full.w-full[src:187][alt:12][aria-hidden="true"]
+          main.h-screen.overflow-visible.@container.sticky.top-0.mx-auto.:id.h-screen.w-full
+            div#animated-outlet-/.min-h-full.w-full.overflow-visible.col-container.relative.flex.flex-1.flex-col.:id.:id.:id.h-[100dvh]
+              div.absolute
+              div.flex.min-h-full.w-full.shrink-0.flex-col.w-full

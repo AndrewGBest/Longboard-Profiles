@@ -80,7 +80,7 @@ export function checkProfile(p, where, { template = false } = {}) {
     // A plain path on the site itself: never another site, never a query.
     if (p.view.entry !== undefined && !(typeof p.view.entry === 'string' && p.view.entry.length <= 200 && /^\/[A-Za-z0-9._~\-/]*$/.test(p.view.entry) && !p.view.entry.startsWith('//') && p.view.entry !== '/')) fail(where, '"view.entry" must be a plain path on the site, such as "/tv"');
     // One word. A profile never carries what Longboard calls itself (Longboard's Hard rule 3).
-    if (p.view.device !== undefined && p.view.device !== 'tv') fail(where, '"view.device" can only be "tv"');
+    if (p.view.device !== undefined && p.view.device !== 'tv' && p.view.device !== 'tv-browser') fail(where, '"view.device" can only be "tv" or "tv-browser"');
     if (p.view.canvas !== undefined && !/^\d{3,4}x\d{3,4}$/.test(p.view.canvas)) fail(where, '"view.canvas" must look like 960x540');
     const sm = p.view.safeMargin;
     if (sm !== undefined && !(typeof sm === 'number' && sm >= 0 && sm <= 0.15)) fail(where, '"view.safeMargin" must be between 0 and 0.15');
