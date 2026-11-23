@@ -16,11 +16,16 @@ YouTube. The site's name is used only to say which website this file is for.
 | `view.carry` | `["v"]`: a link to one video keeps its video. Tried on the live site: the TV app opened at `/tv?v=<id>` plays it. No other parameter was tried, so no other is listed |
 | `view.device` | `"tv"`: for these pages Longboard adds to its usual identity that it is Longboard running as a TV, and leaves the remote to the site's app (arrows, OK, media keys, and Back as Escape or Backspace) |
 
-The words Longboard uses are Longboard's (its Hard rule 3): its
-real engine, version and system, then `Longboard_TV_<chip>_<year>/<version>
-(Longboard, <system>)` (from Longboard 0.3.24; before that without the chip
-and the year, and the site then held back video previews). It does not claim to be another browser, another maker's TV or a
-console, and the profile could not make it.
+The words Longboard uses are set in Longboard, not here (its Hard rule 3).
+From Longboard 0.3.24 it tells these pages what a TV says: the engine TV
+apps run on, then itself as the device, `Longboard_TV_<chip>_<year>/<version>
+(Longboard, <system>)`. That engine is not Longboard's; its owner decided on
+2026-11-23 that Longboard may say so where it is measured to make the site
+better, and here it was: the site serves its first tier instead of its
+third, with page animation. Before 0.3.24 Longboard said its real engine
+and `Longboard_TV/<version> (Longboard, <system>)`, and got the TV app
+without previews or animation. No other maker's TV or console is named, and
+the profile cannot change any of it.
 
 ## How to use it
 
