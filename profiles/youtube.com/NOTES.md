@@ -17,8 +17,9 @@ YouTube. The site's name is used only to say which website this file is for.
 | `view.device` | `"tv"`: for these pages Longboard adds to its usual identity that it is Longboard running as a TV, and leaves the remote to the site's app (arrows, OK, media keys, and Back as Escape or Backspace) |
 
 The words Longboard uses are Longboard's (its Hard rule 3): its
-real engine, version and system, then `Longboard_TV/<version> (Longboard,
-<system>)`. It does not claim to be another browser, another maker's TV or a
+real engine, version and system, then `Longboard_TV_<chip>_<year>/<version>
+(Longboard, <system>)` (from Longboard 0.3.24; before that without the chip
+and the year, and the site then held back video previews). It does not claim to be another browser, another maker's TV or a
 console, and the profile could not make it.
 
 ## How to use it
