@@ -2,7 +2,7 @@
   "longboard": 1,
   "id": "spotify-web-player",
   "name": "Spotify web player",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
     "AndrewGBest"
   ],
@@ -43,6 +43,9 @@
   "text": {
     "search": "[data-testid=\"search-input\"]"
   },
+  "dismiss": [
+    "#onetrust-banner-sdk button.banner-close-button"
+  ],
   "evidence": {
     "outline": "outline.txt"
   }

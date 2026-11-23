@@ -4,12 +4,12 @@
     {
       "id": "spotify-web-player",
       "name": "Spotify web player",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "hosts": [
         "open.spotify.com"
       ],
       "path": "profiles/open.spotify.com/profile.json",
-      "sha256": "e694184b6186d2994c49dc231147b308dc252a9c6090bf3aee96d31a58b0254d"
+      "sha256": "157076b6d77505db60be33264c3d7ae0899877969733b93fc4cc962de50806a2"
     },
     {
       "id": "primevideo",

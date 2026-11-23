@@ -63,3 +63,19 @@
                                               div.:id.:id[role="button"][aria-disabled="false"][aria-labelledby:102][aria-describedby:49][tabindex="0"]
                                               div#:id.:id
                                               div.tUMQUAjcqP9HiKrGGsPD
+# Added 2026-11-23, from an outline saved that day, signed out: the notice about cookies
+# pinned across the bottom of the window, and its close button (the profile's "dismiss").
+    div#onetrust-consent-sdk
+      div.onetrust-pc-dark-filter.ot-hide.ot-fade-in
+      div#onetrust-banner-sdk.otFlat.bottom.ot-wo-title.vertical-align-content[tabindex="0"]
+        div[role="dialog"][aria-label:7]
+          div.ot-sdk-container
+            div.ot-sdk-row
+              div#onetrust-group-container.ot-sdk-eight.ot-sdk-columns.ot-sdk-eleven
+                div.banner_logo
+                div#onetrust-policy
+                  div#onetrust-policy-text{text:221}
+                    a[href:50]{text:12}
+                    a[href:45]{text:14}
+          div#:id
+            button.:id.onetrust-close-btn-ui.banner-close-button.ot-close-icon[aria-label:5]

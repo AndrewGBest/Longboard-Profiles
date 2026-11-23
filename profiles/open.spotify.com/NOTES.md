@@ -41,5 +41,8 @@ By script only, with Longboard 0.3.12's code at a 1920x1080 window, on
   panel on the right is reached with Right from the main pane.
 
 **Not tested:** by a person with a remote; playing anything; the search
-results page; any other page of the app. The notice about cookies, while it
-is still open, takes the highlight once on the way down the main pane.
+results page; any other page of the app. The notice about cookies: from profile
+1.1.0 its close button is named as `dismiss` (shown in the outline, added
+2026-11-23), so Back closes it, and from Longboard 0.3.26 the highlight
+starts on it while it is showing. Tried signed out on 2026-11-23: the
+first press landed on the X, OK closed it, and so did Back.
