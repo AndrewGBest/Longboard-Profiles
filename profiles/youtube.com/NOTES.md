@@ -60,9 +60,16 @@ By script, 2026-11-21, with Longboard 0.3.13's code:
   videos there. A search address lands on the app's start (1.2.0, with
   Longboard 0.3.15's code).
 
+- Back, 2026-11-25, as a guest, with the code that became Longboard
+  0.3.29: with a remote's Back key, from a video to its list, to the side
+  list, to the app's first screen, and once more out of the app to
+  Longboard's Home. Before 0.3.29 a Back that was not the Escape or
+  Backspace key went through the page's history, which the app adds to
+  each time a video is left, and opened the videos watched again.
+
 **Not tested:** signing in (the app does it with a code on another device,
 and a scripted run of Longboard never presses sign-up controls), the app's
-search and its own keyboard, Back at the app's top level, and anything by a
+search and its own keyboard, Back while signed in, and anything by a
 person with a remote.
 
 ## Risk
